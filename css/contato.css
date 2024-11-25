@@ -1,0 +1,67 @@
+input#enviar{
+    width: 70px;
+    height: 30px;
+    scale: 2;
+    background-color: #272727;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: #272727;
+    border-radius: 10px;
+}
+input#enviar:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #272727;
+    transition: 0.7s;
+}
+form{
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    max-width: 500px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+}
+legend{
+    color: #3a3939;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+input, label.radio:hover{
+    cursor: pointer;
+}
+fieldset{
+    margin: 0 auto;
+    color: #3a3939;
+    display: grid;
+    margin-top: 20px;
+}
+span#input{
+    color: white;
+}
+textarea{
+    width: 500px;
+    height: 200px;
+}
+label{
+    color: white;
+}
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    position: left;
+    margin-left: 10px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

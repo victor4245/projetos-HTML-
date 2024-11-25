@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriculas</title>
+    <link rel="shortcut icon" href="./imagens/images.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/mat.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js"></script>
+    <script src="javascript/mat.js"></script>
+</head>
+<body>
+    <div>
+        <header class="menu">
+            <div class="container-img">
+                <a href="index.html"><img class="img-menu" src="./imagens/images.png" alt="Logo Energize Gym"></a>
+                <h1 id="nome">energize gym</h1>
+            </div>
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="unidades.html">unidades</a></li>
+                    <li><a href="programas.html">programas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 id="textoM">insira suas informações para se cadastrar</h1>
+        <!--formualrio para recebimento de dados dos clientes-->
+        <nav>
+        <form action="dados.php" method="POST" id="formulario">
+            <fieldset>
+                <!--campo das informaçoes pessoais-->
+                <legend id="info">informações pessoais</legend>
+                <div id="insira">
+                    <span id="input">Insira o seu nome</span><input type="text" placeholder="Nome completo" id="form" size="25" name="nome">
+                </div>
+                <div id="insira">
+                    <span id="input">Insira o seu e-mail</span><input type="email" placeholder="ex:contato@email.com" size="25" id="form" name="email">
+                </div>
+                <div id="insira">
+                    <span id="input">Insira o seu CPF</span><input type="text" placeholder="ex:05548412368" size="25" id="form" maxlength="11" minlength="11" name="CPF">
+                </div>
+                <div id="insira">
+                    <span id="input">Insira o seu telefone</span><input type="text" placeholder="ex:61940028922" maxlength="13" id="form" size="25" name="tele">
+                </div>
+
+                <fieldset id="caixinha">
+                    <legend>sexo</legend>
+                    <input type="radio" name="sexo" id="sexoM" class="radio" value="M">
+                    <label for="sexoM" class="radio">masculino</label>
+                    <input type="radio" name="sexo" id="sexoF" class="radio" value="F">
+                    <label for="sexoF" class="radio">feminino</label>
+                    <input type="radio" name="sexo" id="sexoO" class="radio" value="O">
+                    <label for="sexoO" class="radio">outro</label>
+                </fieldset>
+                
+                <div id="insira">
+                    <span id="input">Data de nascimento</span><input type="date" name="data">
+                </div>
+
+                <fieldset id="caixinha">
+                    <legend>PCD</legend>
+                    <input type="radio" name="pcd" id="pcdS" value="S">
+                    <label for="pcdS" class="radio">sim</label>
+                    <input type="radio" name="pcd" id="pcdN" value="N">
+                    <label for="pcdN" class="radio">não</label>
+                </fieldset>
+            </fieldset>
+            <!--campo para os planos mensais da academia-->
+            <fieldset id="selecao_plano">
+                <legend>escolha seu plano</legend>
+                <select name="planoaca" id="planoacademia" onchange="escolha(), cor4()">
+                    <option value="none">Selecione um plano</option>
+                    <option value="base">PLANO BASE</option>
+                    <option value="recorrencia">PLANO RECORRÊNCIA</option>
+                    <option value="fidelidade">PLANO RECORRÊNCIA FIDELIDADE</option>
+                    <option value="premium">PLANO RECORRÊNCIA PREMIUM</option>
+                </select>
+                <h2 id="titulo">selecione um plano</h2>
+                <h5 id="cont">...</h5>
+            </fieldset>
+            <!--campo para o local da academia-->
+            <fieldset id="academiaF">
+                <legend>academia</legend>
+                <!--seleçao do estado-->
+                <select name="estado" id="seleciona" onchange="cor()">
+                    <option value="none">Selecione um estado</option>
+                    <option value="DF">Distrito Federal</option>
+                </select>
+                <br>
+                <!--seleçao da cidade-->
+                <select id="seleciona2" onchange="cor2()">
+                    <option value="">Selecione uma cidade</option>
+                    <option value="brb">Brasília</option>
+                </select>
+                <br>
+                <!--seleçao da regiao-->
+                <select name="cidade" id="seleciona3" onchange="mudafoto(); cor3();">
+                    <option value="none">Selecione uma região</option>
+                    <option value="sudoeste">Sudoeste</option>
+                    <option value="EPTG">EPTG</option>
+                    <option value="asa_norte">Asa norte</option>
+                    <option value="asa_sul">Asa sul</option>
+                    <option value="aguas">Aguas claras</option>
+                </select>
+                <img id="academia" src="imagens/images.png">
+                <h2 id="endereco">escolha uma unidade</h2>
+            </fieldset>
+            <!--botao de enviar-->
+            <input type="submit" value="enviar" name="submit" id="enviar">
+        </form>
+        </nav>
+
+        <footer>
+            <img id="rodape" src="imagens/images.png" alt="">
+            <h2 id="rodape">ENERGIZE GYM<span id="copy">&copy;</span></h2>
+            <br>
+            <div id="links">
+                <h1>descubra mais sobre nós</h1>
+                <a href="programas.html">programas</a>
+                <br>
+                <a href="matriculas.html">matriculas</a>
+                <br>
+                <a href="unidades.html">unidades</a>
+                <br>
+                <a href="contato.html">contato</a>
+                <br>
+                <a href="sobre.html">sobre nós</a>
+            </div>
+            <div id="icones">
+                <a href="https://www.instagram.com/jennyfer.olivera/profilecard" target="_blank"><img src="imagens/instagram.png" class="icone" alt="Instagram"></a>
+                <a href="https://www.facebook.com/jennyfer.pekena?mibextid=JRoKGi" target="_blank"><img src="imagens/facebook.png" class="icone" alt="Facebook"></a>
+                <a href="https://wa.me/5561984212002?text=Olá, gostaria de saber mais sobre os seus serviços." target="_blank"><img src="imagens/whats.png" class="icone" alt="WhatsApp"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+/*ajuste das imagens e textos*/
+/*id='nome da atividade' é ajuste da imagem*/
+/*id='T+nome da atividade' é ajuste dos textos das imagens*/
+img#fit{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 400px;
+    transition: 0.7s;
+}
+h2#Tfit{
+    position: relative;
+    left: -500px;
+    transition: 0.7s;
+}
+img#pilates{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: -400px;
+    transition: 0.7s;
+}
+h2#Tpilates{
+    position: relative;
+    left:  500px;
+    transition: 0.7s;
+}
+img#hidro{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 400px;
+    transition: 0.7s;
+}
+h2#Thidro{
+    position: relative;
+    left: -500px;
+    transition: 0.7s;
+}
+img#box{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: -400px;
+    transition: 0.7s;
+}
+h2#Tbox{
+    position: relative;
+    left: 500px;
+    transition: 0.7s;
+}
+img#jui{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 400px;
+    transition: 0.7s;
+}
+h2#Tjui{
+    position: relative;
+    left: -500px;
+    transition: 0.7s;
+}
+img#muay{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: -400px;
+    transition: 0.7s;
+}
+h2#Tmuay{
+    position: relative;
+    left: 500px;
+    transition: 0.7s;
+}
+img#pcd{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+h1#pcd{
+    border-bottom: 2px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h2#pcd{
+    text-align: center;
+}
+/*classes para flutuação dos textos e imagens*/
+.direita{
+    float: right;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.esquerda{
+    float: left;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+div#caixa{
+    margin-bottom: 500px;
+
+}
+.esquerdaTexto{
+    float: left;
+    margin-top: 100px;
+    text-align: justify;
+    max-width: 600px;
+    margin-left: 10px;
+}
+h1{
+    text-transform: uppercase;
+}
+.direitaTexto{
+    float: right;
+    margin-top: 100px;
+    text-align: justify;
+    max-width: 600px;
+    margin-right: 10px;
+}
+img#tabela{
+    margin: 0 auto;
+    border: 4px solid black;
+}

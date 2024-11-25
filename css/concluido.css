@@ -1,0 +1,42 @@
+/*configuraçao do body*/
+body{
+    background-color: #cccccc;
+    width: 100%;
+    overflow-y: hidden;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+}
+/*configuraçao da imagem e texto*/
+figure{
+    margin: 0 auto;
+    position: relative;
+    top: -150px;
+    overflow-wrap: break-word;
+    width: 900px;
+    img{
+        opacity: 0.2;
+    }
+}
+figcaption{
+    text-transform: uppercase;
+    position: relative;
+    top: -500px;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: bold;
+}
+/*link*/
+a{
+    position: absolute;
+    color: #272727;
+    font-size: 17pt;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover{
+    text-decoration: underline;
+}

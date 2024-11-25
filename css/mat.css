@@ -1,0 +1,130 @@
+/*area do campo do local da academia*/
+h1#textoM{
+    border-bottom: 3px solid black;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+select{
+    border: none;
+    border-bottom: 3px solid #686868;
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+}
+select#seleciona{
+    color: gray;
+}
+select#seleciona2{
+    color: gray;
+}
+select#seleciona3{
+    color: gray;
+}
+fieldset#academiaF{
+    width: 670px;
+    margin: 20px;
+}
+img#academia{
+    width: 150px;
+    float: right;
+    position: relative;
+    top: -90px;
+    left: -70px;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+h2#endereco{
+    position: relative;
+    left: 380px;
+    color: black;
+    text-align: center;
+    width: 250px;
+    margin-right: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+/*ccs geral para o formulario*/
+nav{
+    display: flex;
+    flex-direction: row;
+}
+input#enviar{
+    width: 70px;
+    height: 30px;
+    scale: 2;
+    background-color: #272727;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: #272727;
+    border-radius: 10px;
+    display: block;
+}
+input#enviar:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #272727;
+    transition: 0.7s;
+}
+form#formulario{
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    max-width: 800px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+input#form{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    position: left;
+    margin-left: 10px;
+}
+legend{
+    color: #3a3939;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input, label.radio:hover{
+    cursor: pointer;
+}
+fieldset#caixinha{
+    width: 300px;
+    text-transform: uppercase;
+}
+fieldset{
+    color: #3a3939;
+}
+span#input{
+    color: white;
+}
+label{
+    color: white;
+}
+/*div do input data nasc*/
+div#insira{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+/*parte do plano mensal*/
+select#planoacademia{
+    border: none;
+    position: inherit;
+}
+h2#titulo{
+    text-transform: uppercase;
+    white-space: pre-line;
+    color: black;
+}
+h5{
+    white-space: pre-line;
+    color: black;
+}

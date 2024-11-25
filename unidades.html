@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades</title>
+    <link rel="shortcut icon" href="./imagens/images.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js"></script>
+    <link rel="stylesheet" href="css/unidade.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="container-img">
+            <a href="index.html"><img class="img-menu" src="./imagens/images.png" alt="Logo Energize Gym"></a>
+            <h1 id="nome">energize gym</h1>
+        </div>
+        <nav class="header_nav">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="programas.html">programas</a></li>
+                <li><a href="matriculas.html">matriculas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Área principal das unidades -->
+    <h1>unidades perto de você</h1>
+    <nav>
+        <section class="blu" id="blu" onclick="instrucao()">
+            <!-- Unidade Sudoeste -->
+            <div class="escolha-blu">
+                <span id="imagem"><img src="imagens/sudoeste.jpeg" alt="" id="minidisplay"></span>
+                <h2 class="endereco">ENERGIZE Sudoeste</h2>
+                <p><span class="escolha-rank_preco">Quadra 08, S/N Setor Indústrias Gráficas, Brasília - DF</span></p>
+                <a href="matriculas.html" class="matricule-se" id="sudoeste">matricule-se já</a>
+            </div>
+            <!-- Unidade Asa Norte -->
+            <div class="escolha-blu">
+                <span id="imagem"><img src="imagens/asa_norte.jpeg" alt="" id="minidisplay"></span>
+                <h2 class="endereco">ENERGIZE Asa Norte</h2>
+                <p><span class="escolha-rank_preco">516 Q SEPN - CONJUNTO E, QUADRA 516 Asa Norte, Brasília - DF</span></p>
+                <a href="matriculas.html" class="matricule-se" id="asanorte">matricule-se já</a>
+            </div>
+            <!-- Unidade EPTG -->
+            <div class="escolha-blu">
+                <span id="imagem"><img src="imagens/EPTG.jpeg" alt="" id="minidisplay"></span>
+                <h2 class="endereco">ENERGIZE EPTG</h2>
+                <p><span class="escolha-rank_preco">Q. EPTG QE, 01 - CJ.A, LOTE 01 V. Tecnológica Qds. Econômicas Lúcio Costa (Guará), Brasília - DF</span></p>
+                <a href="matriculas.html" class="matricule-se" id="eptg">matricule-se já</a>
+            </div>
+            <!-- Unidade Asa Sul -->
+            <div class="escolha-blu">
+                <span id="imagem"><img src="imagens/asa_sul.jpeg" alt="" id="minidisplay"></span>
+                <h2 class="endereco">ENERGIZE ASA SUL</h2>
+                <p><span class="escolha-rank_preco">Q SHCS CR QD 513 Bloco C, 49 Asa Sul, Brasília - DF</span></p>
+                <a href="matriculas.html" class="matricule-se" id="asasul">matricule-se já</a>
+            </div>
+            <!-- Unidade Águas Claras -->
+            <div class="escolha-blu">
+                <span id="imagem"><img src="imagens/aguas.jpeg" alt="" id="minidisplay"></span>
+                <h2 class="endereco">ENERGIZE AGUAS CLARAS</h2>
+                <p><span class="escolha-rank_preco">Av. Sibipiruna, S/N Sul (Águas Claras), Brasília - DF</span></p>
+                <a href="matriculas.html" class="matricule-se" id="aguas">matricule-se já</a>
+            </div>
+        </section>
+        <img src="imagens/seta.png" alt="" id="seta" class="some">
+        <h2 id="explicacao" class="some">arraste para ver mais</h2>
+        <img src="imagens/pngegg.png" alt="" class="invisivel" id="I1" onclick="instrucao()">
+    </nav>
+    <!-- Mapa das academias -->
+    <div id="mapa">
+        <h1>procure uma academia perto de você!</h1>
+        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61406.42735936916!2d-48.06166243121675!3d-15.86176245608994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sblue%20fit!5e0!3m2!1spt-BR!2sbr!4v1730292476740!5m2!1spt-BR!2sbr" width="800" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        <img id="rodape" src="imagens/images.png" alt="">
+        <h2 id="rodape">ENERGIZE GYM<span id="copy">&copy;</span></h2>
+        <br>
+        <div id="links">
+            <h1>descubra mais sobre nós</h1>
+            <a href="programas.html">programas</a><br>
+            <a href="matriculas.html">matriculas</a><br>
+            <a href="unidades.html">unidades</a><br>
+            <a href="contato.html">contato</a><br>
+            <a href="sobre.html">sobre nós</a>
+        </div>
+        <div id="icones">
+            <a href="https://www.instagram.com/jennyfer.olivera/profilecard" target="_blank"><img src="imagens/instagram.png" class="icone" alt="Instagram"></a>
+            <a href="https://www.facebook.com/jennyfer.pekena?mibextid=JRoKGi" target="_blank"><img src="imagens/facebook.png" class="icone" alt="Facebook"></a>
+            <a href="https://wa.me/5561984212002?text=Olá, gostaria de saber mais sobre os seus serviços." target="_blank"><img src="imagens/whats.png" class="icone" alt="WhatsApp"></a>
+        </div>
+    </footer>
+</body>
+</html>
